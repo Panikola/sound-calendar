@@ -8,7 +8,8 @@
     "ng": "ng",
     "start": "ng serve --port 4201",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:prod": "ng build --prod --base-href https://Panicola.github.io/sound-calendar/",
+    "deploy": "angular-cli-ghpages -d dist/fullcalendar-angular-example/ --no-silent",
     "test": "ng test",
     "lint": "ng lint",
     "clean": "rm -rf dist"

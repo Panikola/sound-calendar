@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CalendarOptions, DateSelectArg, EventClickArg, EventApi } from '@fullcalendar/angular';
+import ru from '@fullcalendar/core/locales/ru';
 import { INITIAL_EVENTS, createEventId } from './event-utils';
 
 @Component({
@@ -11,6 +12,7 @@ export class AppComponent {
 
   calendarVisible = true;
   calendarOptions: CalendarOptions = {
+    locale: ru,
     expandRows: true,
     height: '100%',
     headerToolbar: {
@@ -23,8 +25,8 @@ export class AppComponent {
       timeGridFourDay: {
         type: 'dayGrid',
         duration: { months: 2 },
-        buttonText: '2 month'
-      }
+        buttonText: '2 месяца'
+      },
     },
     initialEvents: INITIAL_EVENTS, // alternatively, use the `events` setting to fetch from a feed
     weekends: true,
